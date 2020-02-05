@@ -1,6 +1,6 @@
 # tools
 .vs
-.fake
+.fake/
 /packages/
 /paket-files/
 

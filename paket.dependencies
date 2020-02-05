@@ -20,6 +20,7 @@ group Tests
 
 group Build
   source https://api.nuget.org/v3/index.json
+  framework: netcoreapp3.1
   storage: none
 
   nuget Fake.Core               ~> 5.16.0
@@ -30,11 +31,5 @@ group Build
   nuget Fake.DotNet.Cli	        ~> 5.16.0
   nuget Fake.Tools.Git          ~> 5.16.0
   nuget Fake.Api.Github         ~> 5.16.0
-
-group DocGeneration
-  source https://api.nuget.org/v3/index.json
-  framework: netstandard2.0
-
-  nuget FAKE ~> 5.0
-  nuget FSharp.Formatting ~> 4.0 prerelease
-  nuget FSharp.Compiler.Service ~> 33.0 prerelease
+  
+  nuget FSharp.Formatting.Razor ~> 4.0 prerelease
